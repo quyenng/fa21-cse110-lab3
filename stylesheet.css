@@ -1,0 +1,167 @@
+/* this is the style sheet for lab 3 */
+
+@media (min-aspect-ratio: 3/2) {
+    div{
+        background: #9af;
+    }
+}
+
+/* universal selector */
+* {
+    color:black;
+}
+
+
+/* attribute selector */
+ol[type="a"] {
+    font-weight: bold;
+
+}
+
+/* selector list */
+h1 h2, h3, p {
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+/* element selector */
+h1 {
+    color: black;
+    font-size: 50pt;
+    display: inline;
+}
+
+h1:hover{
+    background-color: #abf1ff;
+}
+
+h2 {
+    color: gray;
+    font-size: 2pc;
+}
+
+/* pseudo class selector */
+a:active {
+    color: yellow;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+p {
+    display: block;
+    font-size: 12pt;
+}
+
+.blue {
+    background-color:#abf1ff;
+}
+
+#vid-long {
+
+    border-style: dashed;
+    border-color: black;
+    border-width: 3pt;
+    border-radius: 10pt;
+
+    padding-top: 2pt;
+    padding-left: 2pt;
+    padding-right: 2pt;
+    padding-bottom: 2pt;
+
+    height: 50%;
+    width: 50%;
+}
+
+#vid-short {
+    position: static;
+
+    border-style: dashed;
+    border-color: black;
+    border-width: 3pt;
+    border-radius: 10pt;
+
+    padding: 2pt 2pt 2pt 2pt;
+    max-height: 100pt;
+    max-width: fit-content;
+}
+
+
+
+#title-long {
+    border-style: dotted;
+    border-color: gray;
+    border-width: 3pt;
+    border-radius: 10pt;
+
+    margin-top: 3pt;
+    margin-left: 3pt;
+    margin-right: 3pt;
+    margin-bottom: 3pt;
+}
+
+#title-short {
+    border-style: dotted;
+    border-color: gray;
+    border-width: 3pt;
+    border-radius: 10pt;
+
+    margin: 3pt 3pt 3pt 3pt;
+}
+
+#title-auto {
+    border-style: dotted;
+    border-color: gray;
+    border-width: 3pt;
+    border-radius: 10pt;
+
+    margin: auto;
+}
+
+.media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.lists{
+    display: grid;
+    grid-row-gap: 5px;
+    grid-auto-flow: row;
+}
+
+/* descendats combinator */
+li li {
+    list-style-type: circle;
+}
+
+/* child combinator */
+div > p {
+    background-color: white;
+}
+
+/* general sibling combinator */
+p ~ h2 {
+    background-color: cadetblue;
+}
+
+/*adjacent sibling combinator */
+li:first-of-type + li {
+    color: red;
+}
+
+/* combining two selectors */
+.lists.blue {
+    border-width: 2px;
+    border: solid;
+    border-color: black;
+}
+
+
+
+
+
+

@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<style>
+    body {
+        background-color: hsl(145, 75%, 85%) ;
+    }
+</style>
+
     <head>
+        <link rel = "stylesheet" href = "stylesheet.css"> 
+        
         <title> SWE Team First Brain Storm </title>
 
         <meta name="author" content="Quyen Nguyen">
@@ -11,73 +20,81 @@
     <body>
         <main>
             <header>
-                <div> 
-                    <h1> Brainstorm </h1>
-                    <h2> Team Intro & Bonding </h2>
+                <div id = "title-long"> 
+                    <h1 style = "text-align: center; text-decoration:underline; "> Brainstorm </h1>
+                    <h2 style = "position: relative;"> Team Intro & Bonding </h2>
                     <h3> October 3rd, 2021 </h3>
                 </div>
             </header>
-
-            <nav>
-                <a href = "https://www.w3schools.com/html/"> Our fav HTML documentation </a> 
-            </nav>
  
-            <section>
-                <hr> 
-
-                <h2> Unfinished <span> Business </span> </h2>
-                <p> Nothing we are rockstars</p>
-
                 <hr> 
                 
-                <h2> New Business </h2>
+                <h2 id = "title-auto"> New Business </h2>
                 <p> Bonding </p>
+                <a href = https://www.w3schools.com>  https://www.w3schools.com </a>
 
                 <hr> 
 
-                <p> <b> Attendance </b> <i> List </i> </p>
-                <ul> 
-                    <li> Team Leader </li>
-                    <li> Team Member </li>
-                    <li> Team Supervisor </li>
-                </ul>
-
-                <br> 
-
-                <p> <em> Today's </em> <strong> Agenda </strong>  </p>
-                <ol>
-                    <li> Say "Hi" </li>
-                    <li> Make Friends </li>
-                    <li> Solve World Peace </li>
-                </ol>
+                <div class = "lists blue">
+                    <p>Today's Administrative Details</p>
+                    <ul id = "ad">
+                        <li>Date: </li>
+                        <li> 
+                            <p> Organizers </p> 
+                            <ul> 
+                                <li> Meeting Organizer </li>
+                                <li> Note Taker </li>
+                                <li> Presenter </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p> <b> Attendance </b> <i> List </i> </p>
+                    <ul> 
+                        <li> Team Leader </li>
+                        <li> Team Member </li>
+                        <li> Team Supervisor </li>
+                    </ul>
+    
+                    <p> <em> Today's </em> <strong> Agenda </strong>  </p>
+                    <ol type = "a">
+                        <li> Say "Hi" </li>
+                        <li> Make Friends </li>
+                        <li> Solve World Peace </li>
+                    </ol>
+                </div> 
 
                 <hr>
                 
                 <h2> Miscellaneous & Things Presented </h2>
-                <img src = "ucsd-wifi-meme.jpg" alt = "meme about ucsd wifi" >
+                <img  src = "ucsd-wifi-meme.jpg" alt = "meme about ucsd wifi" >
                 
                 <br> 
-                
-                <audio controls>
-                    <source src = "audio1827608133.m4a">
-                </audio>
-
-                <br>
-
-                <video controls>
-                    <source src = "video1827608133.mp4">
-                </video>
+                    <div class = "media">
+                        <audio controls>
+                            <source src = "audio1827608133.m4a">
+                        </audio>
+        
+                        <br>
+        
+                        <video id = "vid-long" controls>
+                            <source src = "video1827608133.mp4">
+                        </video>
+        
+                        <video id = "vid-short" controls>
+                            <source src = "video1827608133.mp4">
+                        </video>
+                    </div>
 
                 <hr>
 
                 <details>
-                    <summary> Metting Summary </summary>
-                    <p> We had a productive first meeting learning about each other and brainstorming for our upcoming project </p>
+                    <summary > Metting Summary </summary>
+                    <p > We had a productive first meeting learning about each other and brainstorming for our upcoming project </p>
                 </details>
 
                 <hr>
 
-                <form>
+                <form >
                     <fieldset>
                         <p> Fill out this form to contact our team. </p>
 
