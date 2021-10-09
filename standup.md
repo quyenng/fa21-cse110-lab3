@@ -13,7 +13,8 @@
 
 
 **2. Today's Checklist - "What tasks need to be done today?"**
-*Issue One: *
+
+*Issue One:*
 
 
 *Issue Two:*
